@@ -104,7 +104,7 @@ public class MakeChangeInQuantity {
 
 				//PreparedStatement ps15 = con.prepareStatement("update carts set Total_Price=?  where Product_Id=?");
 
-				ps5.setLong(1, (prq++));
+				ps5.setLong(1, (prq+1));
 				
 				ps5.setLong(1, prq);
 
@@ -216,7 +216,7 @@ public class MakeChangeInQuantity {
 				PreparedStatement ps5 = con.prepareStatement("update carts set TotalProduct_Quantity=? where Product_Id=?");
 
 				
-				ps5.setLong(1, (prq--));
+				ps5.setLong(1, (prq-1));
 				
 				ps5.setLong(1, prq);
 
